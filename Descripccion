@@ -1,0 +1,49 @@
+# GNS3 (Graphical Network Simulator-3) 🌐
+
+## ¿Qué es GNS3?
+**GNS3** es un software de simulación de redes de código abierto utilizado por cientos de miles de ingenieros de redes en todo el mundo. A diferencia de los simuladores tradicionales que emulan el comportamiento del hardware de forma superficial, GNS3 permite la **emulación real** de sistemas operativos de red (como Cisco IOS, Juniper Junos, Arista EOS, etc.) mediante tecnologías como Dynamips, QEMU y Docker.
+
+Esto significa que el software ejecuta el código real de los dispositivos, ofreciendo un entorno de pruebas idéntico al de un entorno de producción real.
+
+---
+
+## 🚀 Características Principales
+
+* **Emulación Real vs. Simulación:** No se limita a imitar comandos; ejecuta sistemas operativos de red reales dentro de máquinas virtuales o contenedores.
+* **Integración con Wireshark:** Permite realizar capturas de tráfico en tiempo real en cualquier enlace de la topología para analizar paquetes a fondo.
+* **Conectividad con el Mundo Real:** GNS3 puede conectarse directamente a la tarjeta de red de tu computadora física, permitiendo que tus topologías virtuales interactúen con internet o con routers y switches reales en un laboratorio híbrido.
+* **Soporte Multi-vendedor:** Diseña redes complejas mezclando dispositivos de Cisco, Juniper, VyOS, Fortinet, además de servidores Linux y Windows.
+* **Arquitectura Cliente-Servidor:** Utiliza la **GNS3 VM** (generalmente corriendo en VMware o VirtualBox) para delegar la carga de procesamiento pesada, manteniendo la interfaz de usuario fluida y ligera.
+
+---
+
+## 🛠️ ¿Para qué se utiliza?
+
+GNS3 es la herramienta estándar en la industria para tres pilares principales:
+
+1. **Preparación de Certificaciones:** Es el aliado estratégico para estudiar certificaciones oficiales de la industria como **CCNA, CCNP, CCIE, JNCIA** o **CompTIA Network+**.
+2. **Pruebas de Concepto (PoC):** Permite a las empresas diseñar y validar arquitecturas de red complejas antes de gastar presupuesto en hardware físico.
+3. **Educación y Laboratorios:** Ideal para estudiantes y profesionales que desean experimentar con protocolos de enrutamiento (OSPF, BGP), seguridad (Firewalls, ACLs) y automatización de redes (Ansible, Python).
+
+---
+
+## 📊 GNS3 vs. Cisco Packet Tracer
+
+Es común confundir estas herramientas, pero apuntan a necesidades distintas:
+
+| Característica | Cisco Packet Tracer | GNS3 |
+| :--- | :--- | :--- |
+| **Tipo** | Simulador (Comandos programados) | Emulador (Sistemas operativos reales) |
+| **Fidelidad** | Limitada (Solo comandos básicos) | 100% Real (Soporta sintaxis completa) |
+| **Proveedores** | Exclusivo de Cisco | Multi-vendedor (Cisco, Juniper, Linux, etc.) |
+| **Consumo de Recursos** | Muy bajo | Medio - Alto (Depende del número de nodos) |
+| **Uso Ideal** | Estudiantes principiantes (CCNA básico) | Profesionales, Diseño y Certificaciones Avanzadas |
+
+---
+
+## ⚙️ Requisitos del Sistema (GNS3 VM)
+
+Para ejecutar laboratorios medianos/avanzados con fluidez, se recomienda contar con:
+* **Procesador:** CPU con soporte de virtualización (Intel VT-x/AMD-V).
+* **Memoria RAM:** Mínimo 8 GB (16 GB o más recomendado para correr múltiples imágenes IOS/QEMU).
+* **Software Adicional:** VMware Workstation Player/Pro o VirtualBox para alojar la GNS3 VM.
